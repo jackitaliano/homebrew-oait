@@ -5,11 +5,11 @@
 class Oait < Formula
   desc ""
   homepage "https://github.com/jackitaliano/oait"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
-    url "https://github.com/jackitaliano/oait/releases/download/v0.0.6/oait_0.0.6_darwin_all.tar.gz"
-    sha256 "fc11041d22bad812928abba523b30d0d46db4360a2195bb1a68e40b5b06ea573"
+    url "https://github.com/jackitaliano/oait/releases/download/v0.0.7/oait_0.0.7_darwin_all.tar.gz"
+    sha256 "a750aa5179bff349140094b267557c63156acb9d6bfa38469ba3872f310bad2d"
 
     def install
       bin.install "oait"
@@ -19,8 +19,8 @@ class Oait < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jackitaliano/oait/releases/download/v0.0.6/oait_0.0.6_linux_amd64.tar.gz"
-        sha256 "b1d655594ff9c025f60a922e335c4dcc4791c07160551411b5dbabb024e8786d"
+        url "https://github.com/jackitaliano/oait/releases/download/v0.0.7/oait_0.0.7_linux_amd64.tar.gz"
+        sha256 "0d9d37d92bf25b7a13aea8cec6b910bb7b475a9a308328d6421a8d7fe412266c"
 
         def install
           bin.install "oait"
@@ -29,8 +29,8 @@ class Oait < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jackitaliano/oait/releases/download/v0.0.6/oait_0.0.6_linux_arm64.tar.gz"
-        sha256 "13474901e226e6fdcb912573bde5f87905c4de931ae73a0b6363a494b0346c1a"
+        url "https://github.com/jackitaliano/oait/releases/download/v0.0.7/oait_0.0.7_linux_arm64.tar.gz"
+        sha256 "1176058420c3f1a376e332f3516c94d71d15f2d5e5d1d7523a0b6e8c6fcd3147"
 
         def install
           bin.install "oait"
